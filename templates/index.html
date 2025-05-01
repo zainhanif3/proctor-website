@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto py-8">
+    <!-- Hero Section -->
+    <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Virtual Proctor System</h1>
+        <p class="text-xl text-gray-600">Advanced exam monitoring using AI and Computer Vision</p>
+    </div>
+
+    <!-- Project Info -->
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Project Overview</h2>
+        <p class="text-gray-600 mb-4">
+            The Virtual Proctor system uses advanced AI to monitor students during online exams,
+            ensuring academic integrity through real-time detection of suspicious activities.
+        </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <!-- Face Detection -->
+        <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-xl font-semibold mb-3">Face Detection</h3>
+            <ul class="space-y-2 text-gray-600">
+                <li>✓ Real-time face monitoring</li>
+                <li>✓ Multiple face detection</li>
+                <li>✓ Absence detection</li>
+            </ul>
+        </div>
+
+        <!-- Object Detection -->
+        <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-xl font-semibold mb-3">Object Detection</h3>
+            <ul class="space-y-2 text-gray-600">
+                <li>✓ Phone detection</li>
+                <li>✓ Book detection</li>
+                <li>✓ Unauthorized materials</li>
+            </ul>
+        </div>
+
+        <!-- Monitoring -->
+        <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-xl font-semibold mb-3">Real-time Monitoring</h3>
+            <ul class="space-y-2 text-gray-600">
+                <li>✓ Live video feed</li>
+                <li>✓ Instant alerts</li>
+                <li>✓ Activity logging</li>
+            </ul>
+        </div>
+
+        <!-- Evidence System -->
+        <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-xl font-semibold mb-3">Evidence System</h3>
+            <ul class="space-y-2 text-gray-600">
+                <li>✓ Violation screenshots</li>
+                <li>✓ Organized history</li>
+                <li>✓ Timestamp records</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Start Button -->
+    <div class="text-center">
+        <a href="{{ url_for('monitor') }}" 
+           class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+            Start Monitoring
+        </a>
+    </div>
+</div>
+{% endblock %} 
